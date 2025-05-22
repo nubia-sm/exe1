@@ -6,6 +6,10 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
+app.get("/Nana", (req, res) => {
+  res.json({ nombre: "Nana", apellido: "Osaki" });
+});
+
 app.get("/velocidad", (req, res) => {
   res.json({ nombre: "Nubia", apellido: "sanchez" });
 });
